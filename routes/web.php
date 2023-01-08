@@ -15,3 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'CrudController@index');
 Route::resource('todo', 'CrudController');
+
+#
+Route::view('/grocery', 'grocery');
+Route::post('/grocery/post', 'GroceryController@store');
