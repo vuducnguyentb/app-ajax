@@ -15,3 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'CrudController@index');
 Route::resource('todo', 'CrudController');
+
+#message
+Route::get('/ajax',function() {
+    return view('message');
+});
+Route::post('/getmsg','AjaxController@index');
